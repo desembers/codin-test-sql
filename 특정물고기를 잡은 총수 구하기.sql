@@ -1,0 +1,4 @@
+select count(*) FISH_COUNT
+from FISH_INFO a INNER JOIN FISH_NAME_INFO b
+on a.FISH_TYPE = b.FISH_TYPE
+where b.FISH_NAME IN ('BASS', 'SNAPPER')
